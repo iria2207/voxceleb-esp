@@ -1,0 +1,501 @@
+VoxCeleb ID,Gender,Set,Name,Num utterances,Num videos,Total duration
+id000001,female,dev,Amaia Salamanca,50,5,110.2
+id000002,male,dev,Mario Vaquerizo,50,4,112.84025
+id000003,female,dev,Carolina Yuste,50,4,124.96
+id000004,female,dev,Ana Guerra,50,4,112.76
+id000005,female,dev,Najwa Nimri,50,4,110.9200625
+id000006,female,dev,Aura Garrido,50,4,116.04
+id000007,female,dev,María León,50,4,130.3199375
+id000008,male,dev,Fernando Tejero,50,6,108.7999375
+id000009,male,dev,Martiño Rivas,50,4,108.3200625
+id000010,female,dev,María Pedraza,50,4,117.4
+id000011,male,dev,Yon González,50,9,107.31987500000001
+id000012,male,dev,Paco León,50,4,117.7199375
+id000013,male,dev,Hugo Silva,50,4,112.88006250000001
+id000014,male,dev,Álvaro Morte,50,7,116.1599375
+id000015,male,dev,Pedro Alonso,50,4,110.72
+id000016,male,dev,Pepón Nieto,50,4,128.6800625
+id000017,male,dev,José Luis Gil,50,4,113.9200625
+id000018,female,dev,Michelle Jenner,50,5,111.1199375
+id000019,female,dev,Claudia Salas,50,5,116.160125
+id000020,female,dev,Itziar Ituño,50,4,117.96000000000001
+id000021,female,dev,Miren Ibarguren,50,7,113.12006249999999
+id000022,female,dev,Belén Cuesta,50,3,120.6000625
+id000023,female,dev,Maggie Civantos,50,5,112.7599375
+id000024,female,dev,María Valverde,50,6,107.04006249999999
+id000025,female,dev,Ángela Molina,50,4,116.99999999999999
+id000026,female,dev,Angy Fernández,50,4,115.52000000000001
+id000027,female,dev,Natalia Millán,50,4,124.68006249999999
+id000028,male,dev,Salva Reina,50,6,115.80000000000001
+id000029,male,dev,Jaime Lorente,50,5,115.2
+id000030,male,dev,Miguel Herrán,50,4,130.6399375
+id000031,male,dev,Luis Tosar,50,6,119.55981249999999
+id000032,female,dev,Elena Rivera,50,4,110.60000000000001
+id000033,male,dev,Loquillo,50,4,115.16
+id000034,female,dev,Luz Casal,50,4,108.91993749999999
+id000035,male,dev,Iñaki Gabilondo,50,3,128.9199375
+id000036,female,dev,Marta Robles,50,6,118.599875
+id000037,male,dev,Roberto Leal,50,4,113.4399375
+id000038,female,dev,Eva Soriano,50,8,114.3600625
+id000039,male,dev,Carlos Alcaraz,50,4,118.4800625
+id000040,female,dev,Cristina Gutiérrez,50,4,111.719875
+id000041,male,dev,Juan Luis Arsuaga,50,4,117.75999999999999
+id000042,female,dev,María Blasco,50,4,110.44012500000001
+id000043,male,dev,Karlos Arguiñano,50,5,124.92
+id000044,female,dev,Samantha Vallejo-Nágera,50,5,115.960125
+id000045,male,dev,Rodrigo Cuevas,50,6,117.8000625
+id000046,female,dev,Dolores Redondo,50,5,119.520125
+id000047,male,dev,Ángel Martín,50,3,118.8800625
+id000048,female,dev,Ana Pontón,50,6,123.079875
+id000049,male,dev,Miguel Induráin,50,3,114.2399375
+id000050,female,dev,Judit Mascó,50,5,114.92025
+id000051,male,dev,Ricard Camarena,50,4,114.0400625
+id000052,male,dev,Andreu Genestra,50,4,122.7599375
+id000053,male,dev,José Andrés,50,3,121.76
+id000054,male,dev,Joan Roca,50,4,112.91981249999999
+id000055,male,dev,Sergi Arola,50,2,108.12
+id000056,male,dev,Julius Bienert,50,5,117.51993749999998
+id000057,male,dev,Eduardo José Daporta,50,4,120.480125
+id000058,male,dev,Pedro Subijana Reza,50,4,123.2399375
+id000059,male,dev,Ángel León,50,4,116.08
+id000060,female,dev,Vicky Sevilla,50,4,117.960125
+id000061,female,dev,Esther Manzano,50,6,130.88
+id000062,female,dev,Tamara Falcó,50,5,124.55987499999998
+id000063,female,dev,Carme Ruscalleda,50,4,115.679875
+id000064,female,dev,Begoña Rodrigo,50,4,112.719875
+id000065,female,dev,Celia Jiménez,50,3,117.1201875
+id000066,female,dev,Elena Arzak,50,3,114.919875
+id000067,female,dev,Najat Kaanache,50,3,108.2799375
+id000068,female,dev,Eva Arguiñano,50,4,123.16006250000001
+id000069,male,dev,Millán Salcedo Salcedo,50,4,121.9201875
+id000070,male,dev,Héctor de Miguel,50,4,117.75993749999999
+id000071,male,dev,Yunez Chaib,50,3,115.96
+id000072,male,dev,Julián López,50,4,117.8400625
+id000073,male,dev,Félix Extremeño Prieto,50,4,110.28
+id000074,male,dev,Miguel Ángel Tirado,50,4,113.4000625
+id000075,male,dev,Antonio Castelo,50,4,107.80012500000001
+id000076,male,dev,Andreu Buenafuente,50,5,111.83987499999999
+id000077,male,dev,Jaime Caravaca,50,4,109.15993750000001
+id000078,male,dev,Luis Piedrahita,50,5,118.39987500000001
+id000079,male,dev,Santi Millán,50,4,115.4399375
+id000080,male,dev,Manu Sánchez,50,5,131.24
+id000081,male,dev,Edu Soto,50,3,111.31987500000001
+id000082,male,dev,Raúl Cimas,50,4,110.839875
+id000083,male,dev,Carlos Latre,50,3,118.75987500000001
+id000084,male,dev,Dani Mateo,50,3,121.7600625
+id000085,male,dev,Miki Nadal,50,5,122.4000625
+id000086,male,dev,El Monaguillo,50,5,122.23975
+id000087,male,dev,Rober Bodegas,50,3,114.4400625
+id000088,female,dev,Sara Escudero,50,3,108.40000000000002
+id000089,female,dev,Patricia Sornosa,50,4,131.040125
+id000090,female,dev,Paula Prendes,50,4,121.3599375
+id000091,female,dev,Eva Amaral,50,5,106.7599375
+id000092,female,dev,Marta Flich,50,4,123.08006249999998
+id000093,female,dev,Raquel Sastre,50,4,112.28025
+id000094,female,dev,Susi Caramelo,50,3,109.0800625
+id000095,female,dev,Toni Acosta,50,5,114.440125
+id000096,female,dev,Carmen Machi,50,4,111.08
+id000097,female,dev,María Castro,50,3,122.2398125
+id000098,female,dev,Ana Milán,50,4,118.59993750000001
+id000099,female,dev,Alex de la Croix,50,4,131.28
+id000100,female,dev,Nerea Pérez de las Heras,50,4,123.1999375
+id000101,male,dev,Plex,50,4,119.32
+id000102,male,dev,AuronPlay,50,4,117.6399375
+id000103,male,dev,El Rubius,50,3,115.03999999999999
+id000104,male,dev,IlloJuan,50,7,114.24
+id000105,male,dev,Ibai Llanos,50,4,118.2400625
+id000106,male,dev,Xuso Jones,50,3,114.1598125
+id000107,male,dev,TheGrefg,50,3,114.08
+id000108,male,dev,Mario Marzo,50,4,125.36025000000001
+id000109,male,dev,Jordi Wild,50,4,111.40018750000002
+id000110,male,dev,Willyrex,50,4,120.27974999999999
+id000111,male,dev,Frank Cuesta,50,4,127.24006250000001
+id000112,male,dev,Manu Ríos,50,4,115.7600625
+id000113,male,dev,Joan Pradells,50,4,118.560125
+id000114,male,dev,Jordi Cruz,50,6,121.92
+id000115,male,dev,Ignatius Farray,50,4,121.7999375
+id000116,male,dev,Dani el Rojo,50,4,109.7199375
+id000117,male,dev,Rodrigo Cortés,50,4,110.16006250000001
+id000118,male,dev,Tote Fernández,50,4,131.56
+id000119,male,dev,David Calle,50,4,120.6400625
+id000120,male,dev,Siro López,50,4,109.1999375
+id000121,male,dev,Juan Ramón Rallo,50,4,144.599875
+id000122,male,dev,Álvaro Ojeda Sacaluga,50,4,127.59993750000001
+id000123,male,dev,Miguel Bernal Montes,50,3,128.03981249999998
+id000124,male,dev,Gerard Romero,50,4,121.4801875
+id000125,male,dev,Omar Ayuso,50,5,120.08
+id000126,male,dev,Wismichu,50,4,116.56012499999999
+id000127,male,dev,DjMaRiiO,50,4,123.3999375
+id000128,male,dev,Miguel Maldonado,50,4,122.5600625
+id000129,male,dev,Carles Tamayo,50,3,118.48
+id000130,male,dev,José Luis Crespo Cepeda,50,4,115.720125
+id000131,male,dev,Nico Abad,50,4,112.6400625
+id000132,male,dev,Pol Turrents,50,3,113.00006250000001
+id000133,female,dev,Esperansa Grasia,50,4,133.7600625
+id000134,female,dev,Marta Díaz,50,4,120.03993750000001
+id000135,female,dev,Lola Lolita,50,4,124.68
+id000136,female,dev,Lalachus,50,4,115.5600625
+id000137,female,dev,Vanesa Romero,50,4,112.1199375
+id000138,female,dev,Jessica Goicoechea Jover,50,4,117.5999375
+id000139,female,dev,Leonor Lavado,50,3,117.9200625
+id000140,female,dev,María Pombo,50,4,129.64018750000002
+id000141,female,dev,Inés Hernand,50,3,121.4
+id000142,female,dev,Laura Escanes,50,4,118.079875
+id000143,female,dev,Abby,50,3,142.9598125
+id000144,female,dev,Dulceida,50,4,114.24
+id000145,female,dev,Vicky Martín Berrocal,50,4,128.0399375
+id000146,female,dev,Cristinini,50,4,120.119875
+id000147,female,dev,Tamara Gorro,50,4,107.199875
+id000148,female,dev,Begoña Gerpe,50,4,138.55993750000002
+id000149,female,dev,Nagore Robles,50,4,126.07993749999999
+id000150,female,dev,Rocío Vidal Menacho,50,4,126.9599375
+id000151,male,dev,Maxi Iglesias,50,4,117.16
+id000152,male,dev,Abraham Mateo,50,6,117.6
+id000153,male,dev,Quim Gutiérrez,50,5,119.0799375
+id000154,male,dev,Alejo Sauras,50,4,134.35993749999997
+id000155,male,dev,Marc Clotet,50,3,114.8401875
+id000156,male,dev,Daniel Brühl,50,4,119.599875
+id000157,male,dev,Juan Antonio Bayona,50,4,113.92006250000001
+id000158,male,dev,Imanol Arias,50,4,123.04
+id000159,male,dev,Jordi Évole,50,5,110.56
+id000160,male,dev,Javier Gutiérrez,50,4,121.88006250000001
+id000161,male,dev,Carlos Bardem,50,4,111.4400625
+id000162,male,dev,Karra Elejalde,50,4,126.51981250000001
+id000163,male,dev,Eduardo Noriega,50,4,115.000125
+id000164,male,dev,Fele Martínez,50,4,117.6400625
+id000165,male,dev,Jorge Sanz,50,4,108.24
+id000166,male,dev,Albert Pla,50,5,110.080125
+id000167,male,dev,Fran Perea,50,4,108.32006249999999
+id000168,male,dev,Jordi Mollà,50,4,122.55987500000002
+id000169,male,dev,Eduard Fernández,50,4,110.91993749999999
+id000170,male,dev,David Trueba,50,3,135.5199375
+id000171,male,dev,Andrés Velencoso,50,4,116.6800625
+id000172,male,dev,Albert Espinosa,50,4,125.68
+id000173,male,dev,Fernando Trueba,50,4,113.92006250000001
+id000174,male,dev,Fernando Colomo,50,4,121.3199375
+id000175,male,dev,Adrià Collado,50,3,130.0
+id000176,male,dev,Fernando Guillén Cuervo,50,5,115.19981250000001
+id000177,male,dev,Francis Lorenzo,50,3,124.91981249999999
+id000178,male,dev,Carmelo Gómez,50,4,123.72000000000001
+id000179,male,dev,Raúl Arévalo,50,4,130.4800625
+id000180,male,dev,Joaquín Cortés,50,3,136.07999999999998
+id000181,male,dev,Ramón Barea,50,3,110.24006250000001
+id000182,male,dev,Pablo Espinosa,50,5,117.240125
+id000183,male,dev,Kandido Uranga,50,4,122.28
+id000184,male,dev,Agustín Almodóvar,50,4,126.8799375
+id000185,male,dev,Albert Boadella,50,4,120.00000000000001
+id000186,male,dev,José Ángel Egido,50,5,115.2000625
+id000187,male,dev,Andoni Agirregomezkorta,50,4,115.9199375
+id000188,male,dev,José Luis Gómez,50,3,112.6
+id000189,male,dev,Luis Zahera,50,4,115.32006249999999
+id000190,male,dev,Eduardo Aldán,50,4,115.44006250000001
+id000191,female,dev,Miren Jaurne (Mimi XXL),50,4,118.3999375
+id000192,male,dev,Antonio de la Torre,50,4,109.039875
+id000193,female,dev,Cristina Castaño,50,5,119.51987499999998
+id000194,female,dev,Neus Asensi,50,4,123.12006249999999
+id000195,female,dev,Victoria Abril,50,4,116.159875
+id000196,female,dev,Carmen Maura,50,4,118.32
+id000197,female,dev,Candela Peña,50,6,132.799875
+id000198,female,dev,Natalia de Molina,50,5,118.6801875
+id000199,female,dev,Bárbara Lennie,50,5,126.72
+id000200,female,dev,Mónica Cruz,50,5,113.4799375
+id000201,female,dev,Dafne Fernández,50,5,108.599875
+id000202,female,dev,Adriana Ugarte,50,5,121.71993749999999
+id000203,female,dev,Ariadna Gil,50,3,127.19999999999999
+id000204,female,dev,Leonor Watling,50,3,117.03993750000001
+id000205,female,dev,Elena Anaya,50,5,114.24018749999999
+id000206,female,dev,Irene Escolar,50,5,128.7199375
+id000207,female,dev,Patricia Conde,50,4,114.84
+id000208,female,dev,Loles León,50,5,125.27993749999999
+id000209,female,dev,Lluvia Rojo,50,6,123.80012500000001
+id000210,female,dev,Rossy de Palma,50,4,122.88006250000001
+id000211,female,dev,María Pujalte,50,4,124.6400625
+id000212,female,dev,Esther Cañadas,50,4,113.040125
+id000213,female,dev,Blanca Romero,50,4,132.68006250000002
+id000214,female,dev,Marta Etura,50,3,123.2399375
+id000215,female,dev,Assumpta Serna,50,3,122.08
+id000216,female,dev,Irene Montalà,50,4,121.760125
+id000217,female,dev,Ivana Baquero,50,4,121.519625
+id000218,female,dev,Cayetana Guillén Cuervo,50,5,121.9200625
+id000219,female,dev,Alicia Borrachero,50,4,137.92000000000002
+id000220,female,dev,Silvia Jato Nuñez,50,7,111.2398125
+id000221,female,dev,Adriana Ozores,50,4,127.7199375
+id000222,female,dev,Emma Suárez,50,5,119.11993749999999
+id000223,female,dev,Ana Wagener,50,5,111.280375
+id000224,female,dev,Silvia Abascal,50,6,116.44006250000001
+id000225,female,dev,Marta Hazas,50,6,114.3600625
+id000226,female,dev,Leticia Dolera,50,4,120.1599375
+id000227,female,dev,Lola Dueñas,50,3,114.75987500000001
+id000228,female,dev,Míriam Díaz Aroca,50,5,129.599875
+id000229,female,dev,Goya Toledo,50,7,112.08006250000001
+id000230,female,dev,Pilar Castro,50,4,124.55987499999999
+id000231,female,dev,María Barranco,50,6,117.7599375
+id000232,female,dev,Mar Saura,50,5,117.60012499999999
+id000233,female,dev,Emma Ozores,50,4,126.44012500000001
+id000234,female,dev,Marisol Ayuso,50,4,126.1199375
+id000235,female,dev,Teresa Rabal,50,3,109.75999999999999
+id000236,female,dev,Sara Sálamo,50,4,125.15993750000001
+id000237,female,dev,Estrella Morente,50,5,112.799875
+id000238,female,dev,Laia Costa,50,4,117.7998125
+id000239,female,dev,María Hervás,50,5,117.52
+id000240,female,dev,Cecilia Gessa,50,3,133.12
+id000241,female,dev,Gisela,50,4,118.48
+id000242,female,dev,Nina,50,4,110.32000000000001
+id000243,female,dev,Nuria González,50,5,106.48
+id000244,female,dev,Inés Sastre,50,5,119.600125
+id000245,female,dev,María Dueñas,50,3,117.6
+id000246,female,dev,Ana Turpin,50,5,114.8799375
+id000247,female,dev,Norma Ruiz,50,4,129.24
+id000248,female,dev,Paula Echevarría,50,4,125.92
+id000249,female,dev,Ana Rujas,50,5,131.56
+id000250,female,dev,Ruth Gabriel,50,3,123.64
+id000251,female,dev,Vicky Luengo,50,4,122.2003125
+id000252,female,dev,Hiba Abouk,50,5,127.32000000000001
+id000253,female,dev,Macarena Gómez,50,4,112.5599375
+id000254,male,dev,Álex Ubago,50,4,112.04
+id000255,male,dev,Enrique Iglesias,50,6,116.71993750000001
+id000256,male,dev,Bertín Osborne,50,5,114.7600625
+id000257,male,dev,José Luis Perales,50,4,123.12
+id000258,male,dev,Joan Manuel Serrat,50,5,110.44
+id000259,male,dev,Sergio Dalma,50,5,122.0800625
+id000260,male,dev,Carlos Areces,50,4,123.280125
+id000261,male,dev,Plácido Domingo,50,4,118.1199375
+id000262,male,dev,David Bustamante,50,6,123.72
+id000263,male,dev,José Vélez,50,3,114.40018750000002
+id000264,male,dev,Javier Gurruchaga,50,4,123.6799375
+id000265,male,dev,Joselito,50,4,113.96006250000002
+id000266,male,dev,José Luis Moreno,50,4,121.000125
+id000267,male,dev,Chimo Bayo,50,6,119.400125
+id000268,male,dev,Asier Etxeandia,50,5,118.75993749999999
+id000269,male,dev,Alberto Comesaña,50,4,121.28
+id000270,male,dev,Diego «el Cigala»,50,5,111.23962499999999
+id000271,male,dev,Iván,50,3,123.0000625
+id000272,male,dev,Adrián Rodríguez,50,4,119.72000000000001
+id000273,male,dev,Ismael Serrano,50,3,128.4400625
+id000274,male,dev,Álvaro de Luna,50,4,125.5200625
+id000275,female,dev,Pastora Soler,50,4,114.8799375
+id000276,female,dev,Ana Torroja,50,4,128.920125
+id000277,female,dev,Edurne,50,4,124.9600625
+id000278,female,dev,Amaia Montero,50,4,124.8400625
+id000279,female,dev,Beatriz Luengo,50,4,119.91975
+id000280,female,dev,Melody,50,4,133.16000000000003
+id000281,female,dev,Karina,50,4,123.12
+id000282,female,dev,Paloma San Basilio,50,3,113.479875
+id000283,female,dev,Christina Rosenvinge,50,5,111.47993750000002
+id000284,female,dev,Mai Meneses (Nena Daconte),50,4,123.1199375
+id000285,female,dev,Ainhoa Arteta Ibarrolaburu,50,5,111.51975
+id000286,female,dev,Soraya Arnelas,50,4,117.640125
+id000287,female,dev,Bebe,50,5,117.840125
+id000288,female,dev,María Isabel López,50,4,128.60000000000002
+id000289,female,dev,Concha Buika,50,4,118.8400625
+id000290,female,dev,Beth,50,4,108.4800625
+id000291,female,dev,Merche,50,3,122.24000000000001
+id000292,female,dev,Marta Sánchez,50,4,124.0
+id000293,female,dev,Anni B Sweet,50,4,117.12000000000002
+id000294,female,dev,Carmen Linares,50,4,120.8799375
+id000295,female,dev,Cristina Pato,50,4,116.8
+id000296,female,dev,Amparo Sánchez,50,4,126.5199375
+id000297,female,dev,Aiora Renteria,50,4,120.2000625
+id000298,female,dev,Rosa López,50,5,125.760125
+id000299,female,dev,Inma Serrano,50,4,120.16006250000001
+id000300,female,dev,Anabel Conde,50,3,126.8401875
+id000301,female,dev,Idaira,50,4,119.6398125
+id000302,male,dev,Dani Fernández,50,4,116.9599375
+id000303,female,dev,Ruth Lorenzo,50,5,123.320125
+id000304,female,dev,Cristina Llorente,50,4,122.720125
+id000305,female,dev,Bel Arjonna,50,5,121.7200625
+id000306,female,dev,Soleá Morente,50,5,125.4799375
+id000307,male,dev,José Luis Garci,50,4,125.04006249999999
+id000308,male,dev,Antonio Lobato,50,5,116.5201875
+id000309,male,dev,Florentino Fernández,50,4,117.91999999999999
+id000310,male,dev,Juan Tamariz,50,4,122.56
+id000311,male,dev,Jordi González,50,4,133.8
+id000312,male,dev,José Yélamo,50,5,113.2399375
+id000313,male,dev,Jaime Cantizano,50,3,122.32000000000001
+id000314,male,dev,David Cantero,50,5,116.1598125
+id000315,male,dev,Juan Manuel López Iturriaga,50,4,120.55999999999999
+id000316,male,dev,Alfonso Arteseros,50,4,117.239875
+id000317,male,dev,Luis Bassat,50,4,116.2800625
+id000318,male,dev,Jesús Cintora,50,4,127.8001875
+id000319,male,dev,Gómez Bermúdez,50,6,109.3599375
+id000320,male,dev,Ion Aramendi,50,5,123.159875
+id000321,male,dev,Jesús Calleja,50,4,117.8000625
+id000322,male,dev,Iñaki López,50,5,110.60000000000001
+id000323,male,dev,Xosé Castro Roig,50,3,116.44
+id000324,male,dev,Rodrigo Vázquez,50,4,111.76006249999999
+id000325,male,dev,Xabier Usabiaga,50,3,120.8400625
+id000326,male,dev,Toni Soler,50,3,112.24
+id000327,male,dev,Gonzalo Miró,50,6,119.1200625
+id000328,male,dev,Santi Acosta,50,5,118.91987499999999
+id000329,male,dev,Rubén Sanz,50,3,124.27993749999999
+id000330,male,dev,Roberto Vilar,50,4,124.35993749999999
+id000331,male,dev,Risto Mejide,50,5,117.0
+id000332,male,dev,Ramoncín,50,4,115.23975
+id000333,male,dev,Màxim Huerta,50,4,120.16012500000001
+id000334,male,dev,Pepe Navarro,50,4,131.0
+id000335,female,dev,Marta Torné,50,4,117.92
+id000336,female,dev,Bárbara Rey,50,4,123.08
+id000337,female,dev,Carolina Cerezuela,50,4,111.8
+id000338,female,dev,Mamen Mendizábal,50,4,126.2000625
+id000339,female,dev,Arancha de Benito,50,5,123.3599375
+id000340,female,dev,Sandra Barneda,50,3,120.63987499999999
+id000341,female,dev,Nuria Marín,50,4,128.07999999999998
+id000342,female,dev,Samanta Villar,50,4,116.28012499999998
+id000343,female,dev,Emma García,50,5,120.63987499999999
+id000344,female,dev,Patricia Gaztañaga,50,4,118.2399375
+id000345,female,dev,Paloma Lago,50,5,122.80000000000001
+id000346,female,dev,Norma Duval,50,5,116.92
+id000347,female,dev,Lara Álvarez,50,3,131.8800625
+id000348,female,dev,María Patiño,50,4,118.0401875
+id000349,female,dev,Manuela Velasco,50,4,116.439875
+id000350,female,dev,Kira Miró,50,5,116.44006250000001
+id000351,female,dev,Toñi Moreno,50,4,116.00000000000001
+id000352,female,dev,Eva González,50,5,118.52000000000001
+id000353,female,dev,Esther Arroyo,50,5,119.840125
+id000354,female,dev,Belén Esteban,50,4,117.2399375
+id000355,female,dev,Carmen Lomana,50,4,103.519875
+id000356,female,dev,Terelu Campos,50,4,124.9999375
+id000357,male,dev,Juan Ramón Lucas,50,4,112.8799375
+id000358,male,dev,Alejandro Cao de Benós,50,4,127.360125
+id000359,male,dev,Hermann Tertsch,50,3,124.560375
+id000360,male,dev,Xavier Sardà,50,3,110.99993750000002
+id000361,male,dev,Javier Ares,50,4,118.64
+id000362,male,dev,Jaime Alguersuari,50,4,120.56
+id000363,male,dev,Ignacio Ramonet,50,4,122.39993750000001
+id000364,male,dev,Ferrán Martínez Garriga,50,3,117.67981250000001
+id000365,male,dev,Manu Carreño,50,5,119.3599375
+id000366,male,dev,Xabier Fortes,50,4,128.92012499999998
+id000367,female,dev,María Casado Paredes,50,7,117.72
+id000368,female,dev,Maruja Torres,50,4,118.56
+id000369,female,dev,Irene Villa,50,4,120.07987499999999
+id000370,female,dev,Cristina Tárrega,50,4,130.800125
+id000371,female,dev,Beatriz Montañez,50,4,124.24006250000001
+id000372,female,dev,Berta Collado,50,5,114.0400625
+id000373,female,dev,Anna Simon,50,4,127.39987500000001
+id000374,female,dev,Ana Blanco,50,4,137.64025
+id000375,female,dev,Cristina Fallarás,50,4,114.72
+id000376,female,dev,Ana García-Siñeriz,50,5,113.0800625
+id000377,female,dev,Isabel Jiménez,50,3,129.76
+id000378,female,dev,Adela Úcar,50,4,134.520125
+id000379,female,dev,Montserrat Domínguez,50,4,123.52006250000001
+id000380,female,dev,Alejandra Andreu,50,4,122.9199375
+id000381,male,dev,Josema Yuste,50,4,106.2400625
+id000382,male,dev,Carlos Librado,50,5,107.08025
+id000383,male,dev,Agustín Jiménez,50,4,120.9201875
+id000384,male,dev,J. J. Vaquero,50,4,126.03993750000001
+id000385,male,dev,César Cadaval,50,5,112.36
+id000386,male,dev,Iggy Rubín,50,3,111.6
+id000387,male,dev,Agustín el Casta,50,4,124.12018750000001
+id000388,male,dev,Óscar Terol,50,4,132.0399375
+id000389,male,dev,Galder Varas,50,5,112.03993750000001
+id000390,male,dev,Secun de la Rosa,50,3,117.35987499999999
+id000391,female,dev,Mireia Portas,50,4,122.99999999999999
+id000392,female,dev,Martita de Graná,50,5,115.47981250000001
+id000393,female,dev,Pepa Rus,50,6,118.7999375
+id000394,female,dev,Llum Barrera,50,4,128.80012499999998
+id000395,male,dev,Gerard Piqué,50,4,112.1599375
+id000396,male,dev,David Villa,50,5,110.6
+id000397,male,dev,Fernando Torres,50,4,118.2399375
+id000398,male,dev,Carles Puyol,50,4,129.4799375
+id000399,male,dev,Álvaro Morata,50,5,114.88018749999999
+id000400,male,dev,Daniel Carvajal,50,5,107.1999375
+id000401,male,dev,David de Gea,50,5,112.32
+id000402,male,dev,Cesc Fàbregas,50,4,115.84000000000002
+id000403,male,dev,Sergio Busquets,50,4,121.4398125
+id000404,male,dev,Julen Lopetegui,50,4,125.35987500000002
+id000405,male,dev,Sergio Canales,50,5,127.8000625
+id000406,male,dev,Julio Salinas,50,5,123.960125
+id000407,male,dev,Alberto Contador,50,4,126.6
+id000408,male,dev,Emilio Butragueño,50,2,112.9200625
+id000409,male,dev,Isco Alarcón,50,5,119.16006250000001
+id000410,male,dev,Sergio Ramos,50,3,115.04012499999999
+id000411,male,dev,Fernando Morientes,50,3,124.0799375
+id000412,male,dev,Marc Cucurella,50,4,121.16
+id000413,female,dev,Arantxa Sánchez Vicario,50,4,117.4800625
+id000414,female,dev,Conchita Martínez,50,5,117.159875
+id000415,female,dev,Maite Zúñiga,50,4,110.03999999999999
+id000416,female,dev,Joane Somarriba,50,3,121.7600625
+id000417,female,dev,Carla Suárez,50,4,117.84
+id000418,female,dev,Dori Ruano,50,4,119.9598125
+id000419,female,dev,Alba Torrens,50,4,119.75999999999999
+id000420,female,dev,Paula Badosa,50,4,114.6399375
+id000421,female,dev,Teresa Perales,50,2,140.4400625
+id000422,female,dev,Lara Arruabarrena,50,5,128.3199375
+id000423,female,dev,Erika Villaécija,50,4,125.6399375
+id000424,male,dev,Arturo Pérez-Reverte,50,4,128.36
+id000425,male,dev,Juan Manuel de Prada,50,4,127.07999999999998
+id000426,male,dev,Andrés Trapiello,50,5,124.6398125
+id000427,male,dev,César Antonio Molina,50,5,112.4000625
+id000428,male,dev,Javier Cercas,50,4,116.36
+id000429,male,dev,Antonio Muñoz Molina,50,5,113.07987499999999
+id000430,male,dev,Fernando Savater,50,3,121.919875
+id000431,male,dev,Fernando Aramburu,50,5,111.47993749999999
+id000432,male,dev,Bernardo Atxaga,50,6,105.8000625
+id000433,male,dev,Jon Juaristi,50,4,120.08018750000001
+id000434,male,dev,Agustín Fernández Mallo,50,4,124.7601875
+id000435,female,dev,Julia Navarro,50,4,112.03999999999999
+id000436,female,dev,Elvira Lindo,50,4,128.4399375
+id000437,female,dev,Ana Merino,50,4,136.039875
+id000438,female,dev,María Oruña,50,4,135.7201875
+id000439,female,dev,Clara Sánchez,50,4,127.52012500000001
+id000440,female,dev,Care Santos,50,4,112.16006250000001
+id000441,female,dev,Belén Gopegui,50,4,113.12
+id000442,female,dev,Elena Medel,50,5,115.4799375
+id000443,male,dev,Joan Laporta,50,4,128.8398125
+id000444,male,dev,Baltasar Garzón,50,3,115.00018750000001
+id000445,male,dev,Arnaldo Otegi,50,4,122.36018750000001
+id000446,male,dev,Francisco de la Torre Prados,50,4,116.079875
+id000447,male,dev,José Bono,50,4,115.88031250000002
+id000448,male,dev,Miquel Iceta,50,4,135.200125
+id000449,male,dev,Gabriel Rufián,50,4,114.16006250000001
+id000450,male,dev,Alfonso Rueda,50,4,127.4399375
+id000451,female,dev,Cristina Narbona,50,3,124.0799375
+id000452,female,dev,Concepción Gamarra Ruiz-Clavijo,50,4,139.160125
+id000453,female,dev,Esperanza Aguirre,50,4,113.440125
+id000454,female,dev,Ana Botella,50,6,110.88018749999999
+id000455,female,dev,Ana Palacio,50,3,112.2000625
+id000456,female,dev,María Dolores de Cospedal,50,4,125.08012500000001
+id000457,female,dev,Carmen Calvo Poyato,50,3,127.31981249999998
+id000458,female,dev,Rosa Díez,50,5,119.3999375
+id000459,female,dev,Cristina Almeida,50,3,112.4800625
+id000460,female,dev,María Teresa Fernández de la Vega,50,4,122.2399375
+id000461,female,dev,Elena Valenciano,50,5,111.68
+id000462,male,dev,Jon Kortajarena,50,4,114.6001875
+id000463,male,dev,Carlos Lozano,50,3,122.2000625
+id000464,male,dev,Pelayo Díaz,50,5,122.7999375
+id000465,male,dev,Feliciano López,50,7,123.31993750000001
+id000466,male,dev,David Amor,50,3,106.800125
+id000467,male,dev,Alejandro Albarracín,50,4,114.68006249999999
+id000468,male,dev,Javier de Miguel,50,4,119.120125
+id000469,female,dev,Belén Fabra,50,5,123.240125
+id000470,female,dev,Eva Pedraza,50,4,116.64
+id000471,female,dev,Esmeralda Moya,50,5,120.88000000000001
+id000472,female,dev,Nieves Álvarez,50,4,117.1999375
+id000473,female,dev,Eugenia Silva,50,6,124.6
+id000474,female,dev,Ares Teixidó,50,4,116.07987500000002
+id000475,female,dev,Helen Lindes,50,4,121.72
+id000476,female,dev,Alba Carrillo,50,5,118.720125
+id000477,female,dev,Elisabeth Reyes,50,5,121.200125
+id000478,female,dev,Garbiñe Abasolo,50,3,110.68
+id000479,female,dev,Almudena Fernández,50,7,126.7599375
+id000480,female,dev,Malena Costa,50,6,121.44024999999999
+id000481,male,dev,Dabiz Muñoz,50,5,116.60006249999999
+id000482,male,dev,Alberto Chicote,50,4,121.28
+id000483,male,dev,Albert Barniol,50,6,120.7601875
+id000484,male,dev,Jorge Mira,50,4,121.5200625
+id000485,male,dev,Avelino Corma,50,3,125.4799375
+id000486,male,dev,David Jou,50,4,125.7199375
+id000487,male,dev,Agustín Sánchez-Lavega,50,5,126.7601875
+id000488,male,dev,Mariano Barbacid,50,4,124.1201875
+id000489,male,dev,Eduardo Battaner,50,4,111.60000000000001
+id000490,male,dev,Ángel Carracedo,50,4,114.400125
+id000491,male,dev,Eugenio Coronado,50,5,121.31975
+id000492,male,dev,Enrique Castillo Ron,50,4,131.6400625
+id000493,female,dev,Eva Nogales,50,4,127.51987499999998
+id000494,female,dev,Ana María Cuervo,50,3,117.0400625
+id000495,female,dev,Margarita del Val,50,4,119.55993749999999
+id000496,female,dev,Celia Sánchez-Ramos,50,6,113.64
+id000497,female,dev,Ana Crespo,50,4,119.99975
+id000498,female,dev,Cristina Uriarte,50,3,112.9201875
+id000499,female,dev,Sonia Fernández-Vidal,50,4,109.56
+id000500,female,dev,Adela Muñoz Páez,50,6,127.56
