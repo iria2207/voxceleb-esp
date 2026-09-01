@@ -22,16 +22,7 @@ class ActiveSpeakerWindow:
 
 
 class ActiveSpeakerVerifier:
-    """Verificador ligero de hablante activo.
 
-    Usa dos evidencias por ventana temporal:
-    1. Actividad de audio: RMS normalizado respecto al suelo de ruido del vídeo.
-    2. Movimiento visual: diferencia media entre ROIs consecutivos de boca.
-
-    La confianza final exige que haya audio y movimiento en la zona de la boca.
-    Si no hay suficientes frames para medir la evidencia visual, la ventana se
-    rechaza: el VAD por sí solo no permite saber qué persona está hablando.
-    """
 
     def __init__(self, config):
         self.config = config
@@ -49,12 +40,9 @@ class ActiveSpeakerVerifier:
         self.min_visual_score = float(getattr(config, "active_min_visual_score", 0.04))
         self.max_frames_per_window = int(getattr(config, "active_max_frames_per_window", 12))
 
-        print("✅ ActiveSpeakerVerifier inicializado (audio + movimiento de boca)")
+        print("ActiveSpeakerVerifier inicializado (audio + movimiento de boca)")
 
-    # ---------------------------------------------------------------------
-    # Utilidades de bboxes y ROIs
-    # ---------------------------------------------------------------------
-    @staticmethod
+   @staticmethod
     def _as_xyxy_bbox(bbox: np.ndarray) -> np.ndarray:
         bbox = np.asarray(bbox, dtype=np.float32).copy()
         if bbox.shape[0] != 4:
@@ -114,9 +102,6 @@ class ActiveSpeakerVerifier:
         gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
         return cv2.GaussianBlur(gray, (3, 3), 0)
 
-    # ---------------------------------------------------------------------
-    # Scoring
-    # ---------------------------------------------------------------------
     @staticmethod
     def _audio_rms(audio: np.ndarray, sr: int, start: float, end: float) -> float:
         s = max(0, int(start * sr))
@@ -169,7 +154,6 @@ class ActiveSpeakerVerifier:
         if len(diffs) < 2:
             return 0.0
 
-        # En vídeos reales, valores pequeños ya indican movimiento.
         raw = float(np.median(diffs))
         return float(np.clip(raw / 0.035, 0.0, 1.0))
 
@@ -187,21 +171,16 @@ class ActiveSpeakerVerifier:
         v = self._visual_score(frame_paths, track, start, end)
 
         if v <= 0.0:
-            # Audio sin evidencia visual puede pertenecer al presentador, a una
-            # voz en off o a ruido. No debe convertirse en candidato del rostro.
+           
             conf = 0.0
             method = "no_visual_rejected"
         else:
-            # Requiere simultáneamente audio y boca. La media geométrica penaliza
-            # mucho cuando una de las dos señales es débil.
             conf = float(np.sqrt(max(a, 0.0) * max(v, 0.0)))
             method = "av_energy_mouth_motion"
 
         return ActiveSpeakerWindow(start, end, conf, a, v, method)
 
-    # ---------------------------------------------------------------------
-    # Segmentación
-    # ---------------------------------------------------------------------
+
     def _global_noise_floor(self, audio: np.ndarray, sr: int) -> float:
         audio = np.asarray(audio, dtype=np.float32)
         if audio.ndim > 1:
@@ -293,7 +272,6 @@ class ActiveSpeakerVerifier:
         min_active_duration: Optional[float] = None,
         step_seconds: Optional[float] = None,
     ) -> List[Dict]:
-        """Devuelve segmentos temporales en los que el track parece estar hablando."""
         min_active_duration = float(
             min_active_duration if min_active_duration is not None
             else getattr(self.config, "segment_min_duration", 2.0)
@@ -336,10 +314,6 @@ class ActiveSpeakerVerifier:
 
             segs = self._windows_to_segments(windows, track_id, min_active_duration=min_active_duration)
             if not segs and self.fallback_to_track_windows:
-                # El detector ligero solo propone; SyncNet oficial toma la
-                # decisión final. Para no perder habla válida por un plano con
-                # poco movimiento aparente, recorremos el track en ventanas no
-                # solapadas con audio y evidencia visual mínimas.
                 target = float(getattr(self.config, "segment_target_duration", 5.0))
                 t = t0
                 while t + min_active_duration <= t1 + 1e-6:
@@ -374,10 +348,9 @@ class ActiveSpeakerVerifier:
             all_segments.extend(segs)
 
         all_segments.sort(key=lambda x: (x["start"], -x["confidence"]))
-        print(f"🔍 Active speaker: {len(face_tracks)} tracks -> {len(all_segments)} segmentos candidatos")
+        print(f"Active speaker: {len(face_tracks)} tracks -> {len(all_segments)} segmentos candidatos")
         return all_segments
 
-    # Compatibilidad con versiones antiguas
     def verify(
         self,
         video_frames: List[np.ndarray],
@@ -386,7 +359,6 @@ class ActiveSpeakerVerifier:
         face_track: Dict,
         min_duration: float = 2.0,
     ) -> Tuple[bool, float]:
-        """Compatibilidad: no usar para segmentar. Mantiene API antigua."""
         avg_det = float(np.mean(face_track.get("det_scores", [0.0])))
         conf = min(avg_det, 0.49)
         return conf >= self.threshold and min_duration <= face_track.get("duration", 0), conf
@@ -398,7 +370,6 @@ class ActiveSpeakerVerifier:
         frame_times: List[float],
         audio_path: Path,
     ) -> List[Dict]:
-        """Compatibilidad con código antiguo: evita aceptar tracks por det_score."""
         filtered = []
         for track in tracks:
             if track.get("speaker_id") == "unknown":
@@ -406,5 +377,5 @@ class ActiveSpeakerVerifier:
             # Solo aceptamos tracks que ya vengan de una segmentación activa real.
             if track.get("active_speaker_conf", 0.0) >= self.min_confidence:
                 filtered.append(track)
-        print(f"🔍 Active speaker filter: {len(tracks)} -> {len(filtered)} tracks")
+        print(f"Active speaker filter: {len(tracks)} -> {len(filtered)} tracks")
         return filtered
