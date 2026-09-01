@@ -15,7 +15,6 @@ _ENV_PATTERN = re.compile(r"\$\{([^}:]+)(?::-(.*?))?\}")
 
 
 def _expand_env(value: Any) -> Any:
-    """Expande ${VAR} y ${VAR:-default} en strings."""
     if isinstance(value, str):
         def repl(match: re.Match) -> str:
             name = match.group(1)
@@ -62,7 +61,6 @@ class CelebrityConfig:
 
 
 class GlobalConfig:
-    """Objeto sencillo con atributos dinámicos desde la sección global."""
 
     PATH_KEYS = {
         "download_path", "output_base", "temp_frames_dir", "data_raw",
