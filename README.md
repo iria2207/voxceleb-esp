@@ -45,19 +45,19 @@ The repository does not contain source videos, extracted WAV files, reference fa
 
 The main processing stages are:
 
-1. validate the speaker and video manifests;
-2. check the source videos and reference images;
-3. process long videos in temporal windows;
-4. detect, track, and identify the target face;
-5. verify that the visible person is speaking using SyncNet;
-6. apply voice activity and audio-quality filters;
-7. remove exact and temporal duplicates;
-8. rank candidates and select 50 clips per speaker;
-9. export metadata, trial lists, and validation reports.
+1. Validate the speaker and video manifest
+2. Check the source videos and reference images
+3. Process long videos in temporal windows
+4. Detect, track, and identify the target face
+5. Verify that the visible person is speaking using SyncNet
+6. Apply voice activity and audio-quality filters
+7. Remove exact and temporal duplicates
+8. Rank candidates and select 50 clips per speaker
+9. Export metadata, trial lists, and validation reports
 
 ## Requirements
 
-The pipeline was developed for Linux with Python 3.10, FFmpeg, FFprobe, CUDA, and NVIDIA GPUs.
+The pipeline was developed for Linux with Python 3.10, FFmpeg, FFprobe, CUDA, and NVIDIA GPU.
 
 Create a Python environment and install the dependencies:
 
