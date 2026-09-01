@@ -42,7 +42,7 @@ class ActiveSpeakerVerifier:
 
         print("ActiveSpeakerVerifier inicializado (audio + movimiento de boca)")
 
-   @staticmethod
+    @staticmethod
     def _as_xyxy_bbox(bbox: np.ndarray) -> np.ndarray:
         bbox = np.asarray(bbox, dtype=np.float32).copy()
         if bbox.shape[0] != 4:
@@ -72,7 +72,6 @@ class ActiveSpeakerVerifier:
 
     @staticmethod
     def extract_mouth_roi(frame: np.ndarray, bbox: np.ndarray, margin: float = 0.35) -> Optional[np.ndarray]:
-        """Extrae una ROI de boca aproximada desde la bbox de la cara."""
         if frame is None or frame.size == 0:
             return None
 
@@ -154,6 +153,7 @@ class ActiveSpeakerVerifier:
         if len(diffs) < 2:
             return 0.0
 
+        # En vídeos reales, valores pequeños ya indican movimiento.
         raw = float(np.median(diffs))
         return float(np.clip(raw / 0.035, 0.0, 1.0))
 
@@ -171,15 +171,15 @@ class ActiveSpeakerVerifier:
         v = self._visual_score(frame_paths, track, start, end)
 
         if v <= 0.0:
-           
+            # Audio sin evidencia visual puede pertenecer al presentador, a una voz en off o a ruido. No debe convertirse en candidato del rostro.
             conf = 0.0
             method = "no_visual_rejected"
         else:
+            # Requiere simultáneamente audio y boca. La media geométrica penaliza mucho cuando una de las dos señales es débil.
             conf = float(np.sqrt(max(a, 0.0) * max(v, 0.0)))
             method = "av_energy_mouth_motion"
 
         return ActiveSpeakerWindow(start, end, conf, a, v, method)
-
 
     def _global_noise_floor(self, audio: np.ndarray, sr: int) -> float:
         audio = np.asarray(audio, dtype=np.float32)
@@ -351,6 +351,7 @@ class ActiveSpeakerVerifier:
         print(f"Active speaker: {len(face_tracks)} tracks -> {len(all_segments)} segmentos candidatos")
         return all_segments
 
+    # Compatibilidad con versiones antiguas
     def verify(
         self,
         video_frames: List[np.ndarray],

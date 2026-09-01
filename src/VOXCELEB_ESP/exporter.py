@@ -23,7 +23,7 @@ class VoxCelebExporter:
         self.trials_b_path = self.output_base / "trials_B.txt"
 
         self.wav_dir.mkdir(parents=True, exist_ok=True)
-        print("Exporter inicializado")
+        print("✅ Exporter inicializado")
 
     def export_from_approved(self, approved_csv: Path, celebrities_config: List) -> pd.DataFrame:
         approved_csv = Path(approved_csv)
@@ -50,7 +50,7 @@ class VoxCelebExporter:
             video_id = str(row["video_id"])
             source = Path(str(row["candidate_path"]))
             if not source.exists():
-                print(f"No encontrado, se omite: {source}")
+                print(f"⚠️ No encontrado, se omite: {source}")
                 continue
 
             approved_index = row.get("approved_index", ordinal)
@@ -75,7 +75,9 @@ class VoxCelebExporter:
             })
             exported_rows.append(output_row)
 
-       
+        # El árbol exportado se puede regenerar desde candidates/audio. Se
+        # retiran copias antiguas para que los WAV físicos coincidan con la
+        # selección y con la metadata recién creada.
         removed = 0
         for speaker_id in sorted(df["speaker_id"].astype(str).unique()):
             speaker_dir = self.wav_dir / speaker_id
@@ -108,6 +110,7 @@ class VoxCelebExporter:
         return utterances
 
     def make_trials(self, max_trials: int = 200000) -> None:
+        """Genera Trial A y Trial B a partir de los audios ya exportados."""
         if not self.utt_meta_path.exists():
             raise FileNotFoundError(f"No existe metadata de utterances: {self.utt_meta_path}")
         utterances = pd.read_csv(self.utt_meta_path)
@@ -130,6 +133,7 @@ class VoxCelebExporter:
             return str(path).replace("\\", "/")
 
     def export_from_metadata(self, processed_dir: Path, metadata_csv: Path, celebrities_config: List) -> None:
+        """Exporta desde metadata.csv generado por el pipeline."""
         processed_dir = Path(processed_dir)
         metadata_csv = Path(metadata_csv)
 
@@ -249,6 +253,7 @@ class VoxCelebExporter:
                 elif mode == "B" and not same_video:
                     trials.append((1, str(a["export_path"]), str(b["export_path"])))
 
+        # NON-TARGETS: distintos hablantes y preferentemente distinto vídeo.
         spk_ids = sorted(by_spk.keys())
         non_target_goal = min(max(len(trials) * 4, 1000 if trials else 0), 20000)
         seen = {self._pair_key(t[1], t[2], t[0]) for t in trials}
@@ -291,4 +296,4 @@ class VoxCelebExporter:
         with open(path, "w", encoding="utf-8") as f:
             for target, w1, w2 in trials:
                 f.write(f"{target} {w1} {w2}\n")
-        print(f"Trials guardados: {path} ({len(trials):,} pares)")
+        print(f"📋 Trials guardados: {path} ({len(trials):,} pares)")
