@@ -1,0 +1,141 @@
+global:
+  pipeline_version: "2.1-syncnet-framewise"
+  # Paths are relative to the repository root.
+  download_path: "data/videos"
+  output_base: "workspace/output"
+  data_raw: "workspace/data/raw"
+  data_processed: "workspace/data/processed"
+  data_candidates: "workspace/data/candidates"
+  temp_frames_dir: "workspace/temp/frames"
+  models_dir: "models"
+  logs_dir: "workspace/logs"
+  reports_dir: "workspace/reports"
+  references_dir: "references"
+
+  # Extracción VoxCeleb-style
+  detect_fps: 5
+  audio_sr: 16000
+
+  # Face detection / tracking
+  face_det_size: [640, 640]
+  min_face_size: 80
+  iou_threshold: 0.45
+  track_min_association_iou: 0.15
+  track_min_embedding_similarity: 0.30
+  min_track_frames: 10
+  max_lost_frames: 5
+  # Segunda pasada solo si la primera no encuentra al objetivo. Recupera
+  # planos abiertos sin rebajar ArcFace, el margen de identidad ni SyncNet.
+  face_recovery_enabled: true
+  face_recovery_min_face_size: 48
+  face_recovery_max_lost_frames: 8
+  face_recovery_min_association_iou: 0.08
+  face_recovery_min_embedding_similarity: 0.40
+
+  # Verificación facial contra referencias
+  face_template_threshold: 0.60
+  face_template_margin: 0.08
+  face_min_track_consistency: 0.75
+  face_template_min_refs: 2
+  use_face_classifier: false
+
+  # Segmentos de entrenamiento: más flexibles que el test oficial
+  segment_min_duration: 2.0
+  segment_target_duration: 3.0
+  segment_max_duration: 5.0
+  segments_per_video: 20
+  # Reserva primero los cinco mejores clips válidos de cada vídeo. Después
+  # completa la cuota del hablante usando el ranking global.
+  min_selected_per_video: 5
+  target_clips_per_speaker: 50
+  max_candidates_per_video: 80
+  # Escalabilidad: cuando un vídeo alcanza 25 candidatos que ya han superado
+  # identidad, SyncNet, ambigüedad y calidad, pasa al siguiente. En entrevistas
+  # largas visita antes inicio, centro y final para conservar diversidad.
+  early_stop_candidates_enabled: true
+  early_stop_candidates_per_video: 25
+  early_stop_min_temporal_windows: 3
+  max_selected_temporal_iou: 0.05
+
+  # Calidad audio
+  vad_aggressiveness: 2
+  min_speech_ratio: 0.55
+  min_snr_db: 8.0
+  max_clipping_ratio: 0.02
+
+  # Propuesta temporal ligera (solo propone; nunca aprueba por sí sola)
+  syncnet_model_path: null
+  syncnet_threshold: 0.45
+  syncnet_min_confidence: 0.45
+  active_step_seconds: 0.5
+  active_window_seconds: 1.0
+  active_max_frames_per_window: 8
+  active_proposal_threshold: 0.30
+  active_merge_gap_seconds: 1.10
+  active_max_bbox_gap_frames: 3
+  active_fallback_to_track_windows: true
+
+  # Hablante activo REAL: SyncNet oficial sobre el track facial objetivo a 25 FPS
+  real_asd_enabled: true
+  real_asd_required: true
+  # CUDA acelera la verificacion. Si el nodo no tiene VRAM suficiente, el
+  # verificador cambia automaticamente a CPU sin abortar el pipeline.
+  syncnet_device: "cuda:0"
+  syncnet_confidence_threshold: 4.0
+  syncnet_max_abs_offset_frames: 3
+  syncnet_crop_fps: 25
+  syncnet_crop_size: 224
+  syncnet_crop_margin: 0.40
+  syncnet_batch_size: 20
+  syncnet_vshift: 10
+  keep_syncnet_crops: false
+  # La implementación oficial calcula fconfm frame a frame. Extraemos solo
+  # regiones sostenidas, en vez de rechazar toda una ventana por su resumen.
+  syncnet_framewise_enabled: true
+  syncnet_framewise_threshold: 4.0
+  syncnet_framewise_min_high_seconds: 0.80
+  syncnet_framewise_min_span_seconds: 1.20
+  syncnet_framewise_bridge_gap_seconds: 0.32
+  syncnet_framewise_output_min_seconds: 2.0
+  syncnet_framewise_output_target_seconds: 3.0
+  syncnet_framewise_output_max_seconds: 5.0
+  syncnet_framewise_min_high_ratio: 0.30
+  # El SyncNet oficial estima un offset para todo el probe. En entrevistas,
+  # silencios y cambios de plano pueden dominar ese resumen. Exigimos aquí un
+  # offset local estable y siempre dentro del mismo margen estricto de ±3.
+  syncnet_local_offset_enabled: true
+  syncnet_local_offset_window_seconds: 2.0
+  syncnet_local_offset_min_stability_ratio: 0.60
+  syncnet_probe_duration_seconds: 12.0
+  syncnet_probe_hop_seconds: 10.0
+  syncnet_probe_min_duration_seconds: 2.0
+  syncnet_probe_min_track_coverage: 0.70
+  syncnet_max_probes_per_window: 160
+  # Si dos rostros visibles sincronizan con el mismo audio, el clip es ambiguo.
+  syncnet_competitor_check: true
+  syncnet_competitor_min_coverage: 0.65
+  syncnet_max_competitors: 2
+
+  # Informes
+  min_utterances_per_speaker_report: 50
+  min_clips_per_speaker: 50
+  min_duration_per_speaker_sec: 0
+  # Selection starts with a limit of 20 clips per video and requires at least
+  # two represented source videos for every speaker.
+  min_source_videos_per_speaker: 2
+  max_speaker_retry_attempts: 1
+  # Reprocesa otros vídeos con los mismos umbrales; nunca rebaja la calidad.
+  speaker_retry_relaxed: false
+  # If the 50-clip quota cannot be reached, additional candidates that passed
+  # the same mandatory filters may be selected from the available videos.
+  allow_video_cap_overflow: true
+  fail_if_insufficient_coverage: true
+  require_exact_balanced_export: true
+  max_internal_trials: 200000
+
+  # Ejecución
+  device: "cuda"
+  max_workers: 4
+  batch_size: 16
+
+celebrities: []
