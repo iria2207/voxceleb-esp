@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
+# Source and generated media
+data/
+references/*.jpg
+references/*.jpeg
+references/*.png
+*.wav
+*.mp4
+*.mkv
+*.webm
+
+# Models and credentials
+models/*
+!models/README.md
+*.model
+*.onnx
+*.pth
+*.pt
+*.ckpt
+cookies*.txt
+rclone.conf
+.env
+
+# Pipeline outputs
+workspace/
+config.generated.yaml
+missing_videos.txt
+videos_fallidos.txt
+*.log
+*.out
+*.err
+
