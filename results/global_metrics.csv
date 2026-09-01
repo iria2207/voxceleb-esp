@@ -1,0 +1,10 @@
+model,metric,trial,base,adapted
+ResNetSE34L,EER_percent,A,7.664,5.908
+ResNetSE34L,EER_percent,B,14.008,10.426
+ResNetSE34L,minDCF,A,0.39818,0.29944
+ResNetSE34L,minDCF,B,0.71050,0.57922
+ResNetSE34V2,EER_percent,A,4.520,4.186
+ResNetSE34V2,EER_percent,B,9.350,9.720
+ResNetSE34V2,minDCF,A,0.21996,0.22012
+ResNetSE34V2,minDCF,B,0.50424,0.53380
+
